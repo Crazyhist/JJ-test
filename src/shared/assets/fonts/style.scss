@@ -1,0 +1,52 @@
+@font-face {
+	font-family: 'DrukCyr';
+	src: url('DrukCyr-Medium.ttf') format('truetype');
+	font-weight: 500;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'DrukWideCyr';
+	src: url('drukwidecyr-medium.woff2') format('woff2'),
+		url('drukwidecyr-medium.woff') format('woff'),
+		url('drukwidecyr-medium.ttf') format('truetype'),
+		url('drukwidecyr-medium.eot') format('embedded-opentype'),
+		url('drukwidecyr-medium.otf') format('opentype');
+	font-weight: 500;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Montserrat';
+	src: url('Montserrat-Bold.ttf') format('truetype');
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'NunitoSans';
+	src: url('NunitoSans-Black.ttf') format('truetype');
+	font-weight: 900;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'NunitoSans';
+	src: url('NunitoSans-Bold.ttf') format('truetype');
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'NunitoSans';
+	src: url('NunitoSans-Light.ttf') format('truetype');
+	font-weight: 300;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'NunitoSans';
+	src: url('NunitoSans-Regular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}

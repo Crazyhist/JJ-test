@@ -1,0 +1,48 @@
+@import 'normalize.css';
+
+* {
+	box-sizing: border-box;
+	/* Основные цвета */
+	--color-primary: #f269af; /* Розовый для кнопок */
+	--color-secondary: #abec20; /* Зеленый для кнопок */
+	--color-blue: #0267ff; /* Синий текст и элементы */
+	--color-black: #000000; /* Основной текст */
+	--color-white: #ffffff; /* Вторичный текст */
+	--color-pink: #a66eff;
+
+	--gradient-header: linear-gradient(
+		90deg,
+		#fdf398 0%,
+		#f7be87 24%,
+		#e56370 46%,
+		#e84bba 67%,
+		#9310d8 100%
+	);
+
+	/* Фоны */
+	--background-main: #ffffff; /* Основной белый фон */
+	--background-highlight: #fafafa; /* Светлый серый фон */
+}
+
+body {
+	font-family: 'NunitoSans', sans-serif;
+	padding: 0;
+	margin: 0;
+	min-height: 100vh;
+}
+
+a {
+	text-decoration: none;
+}
+
+p {
+	margin: 0;
+	padding: 0;
+}
+
+ul,
+ol {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}

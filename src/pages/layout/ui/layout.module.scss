@@ -1,0 +1,14 @@
+.container {
+	max-width: 1440px;
+	width: 100%;
+}
+
+.contentContainer {
+	display: grid;
+	grid-template-columns: auto 84.44vw auto;
+	max-width: 100vw;
+	min-height: 100%;
+	overflow: hidden;
+	position: relative;
+	z-index: 1;
+}

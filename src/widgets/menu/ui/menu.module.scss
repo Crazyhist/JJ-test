@@ -1,0 +1,50 @@
+.menuWrapper {
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	z-index: 999;
+	width: 64px;
+	background-color: var(--color-pink);
+}
+
+.menu {
+	position: fixed;
+	top: 103px;
+	left: 0;
+	width: 64px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.nav {
+	display: flex;
+	flex-direction: column;
+	gap: 113px;
+}
+
+.menuItem {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 13px;
+	text-align: center;
+	color: var(--color-white);
+	font-family: 'DrukCyr', sans-serif;
+	font-weight: 500;
+	font-size: 24px;
+	letter-spacing: 0.03em;
+	position: relative;
+}
+
+.label {
+	writing-mode: vertical-rl;
+	transform: rotate(180deg);
+}
+
+.arrow {
+	max-width: 16px;
+	max-height: 16px;
+}
