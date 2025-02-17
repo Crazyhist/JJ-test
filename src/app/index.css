@@ -2,6 +2,8 @@
 
 * {
 	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
 	/* Основные цвета */
 	--color-primary: #f269af; /* Розовый для кнопок */
 	--color-secondary: #abec20; /* Зеленый для кнопок */
@@ -45,4 +47,9 @@ ol {
 	list-style: none;
 	margin: 0;
 	padding: 0;
+}
+
+h1 {
+	padding: 0;
+	margin: 0;
 }

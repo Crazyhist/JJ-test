@@ -1,1 +1,1 @@
-export { MenuToggle } from './ui/MenuToggle'
+export { MenuToggle } from './ui/menuToggle'

@@ -3,7 +3,7 @@ import styles from './Button.module.scss'
 interface ButtonProps {
 	children: React.ReactNode
 	onClick?: () => void
-	variant?: 'outlined' | 'pink' | 'green'
+	variant?: 'outlined' | 'pink' | 'green' | 'black'
 	className?: string
 }
 

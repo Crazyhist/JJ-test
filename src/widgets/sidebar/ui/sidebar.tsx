@@ -1,5 +1,5 @@
 import { MenuArrowIcon } from '@/shared/assets/icons'
-import styles from './menu.module.scss'
+import styles from './sidebar.module.scss'
 
 const menuItems = [
 	{ id: 1, label: 'ПАРКИ' },
@@ -8,7 +8,7 @@ const menuItems = [
 	{ id: 4, label: 'АФИША' },
 ]
 
-export const Menu = () => {
+export const Sidebar = () => {
 	return (
 		<div className={styles.menuWrapper}>
 			<aside className={styles.menu}>

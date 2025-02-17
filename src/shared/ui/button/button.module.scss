@@ -1,7 +1,10 @@
 /* Button.module.scss */
 .button {
 	padding: 8px 16px;
-	font-size: 14px;
+	font-family: 'DrukCyr', sans-serif;
+	font-size: 22px;
+	font-weight: normal;
+	letter-spacing: 0.03em;
 	border-radius: 30px;
 	max-height: 40px;
 	cursor: pointer;
@@ -17,19 +20,11 @@
 }
 
 .outlined {
-	font-family: 'DrukCyr', sans-serif;
-	font-size: 22px;
-	font-weight: normal;
-	letter-spacing: 0.03em;
 	border: 2px solid #5834a4;
 	color: #5834a4;
 }
 
 .pink {
-	font-family: 'DrukCyr', sans-serif;
-	font-size: 22px;
-	font-weight: normal;
-	letter-spacing: 0.03em;
 	padding: 8px 32px;
 	background: var(--color-primary);
 	border: none;
@@ -37,12 +32,36 @@
 }
 
 .green {
-	font-family: 'DrukCyr', sans-serif;
-	font-size: 22px;
-	letter-spacing: 0.03em;
-	font-weight: normal;
 	padding: 8px 32px;
 	background: var(--color-secondary);
 	border: none;
 	color: #262626;
+}
+
+.black {
+	padding: 11px 17px 13px;
+	gap: 12px;
+	max-height: 48px;
+	width: max-content;
+	color: var(--color-black);
+	border: 2px solid var(--color-black);
+	overflow: hidden;
+
+	span {
+		transition: transform 0.5s ease;
+	}
+
+	svg {
+		transition: transform 0.5s ease;
+	}
+
+	&:hover {
+		span {
+			transform: translateX(51px);
+		}
+
+		svg {
+			transform: translateX(51px);
+		}
+	}
 }
