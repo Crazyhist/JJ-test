@@ -5,10 +5,9 @@ import { useEffect } from 'react'
 import styles from './DualSlider.module.scss'
 
 export const DualSlider = () => {
-	// Создаем состояния для рефов обоих слайдеров
 	const [leftSliderRef, leftInstanceRef] = useKeenSlider<HTMLDivElement>({
 		loop: true,
-		vertical: true, // Левый вертикальный
+		vertical: true,
 		slides: { perView: 1, spacing: 10 },
 	})
 
@@ -17,7 +16,6 @@ export const DualSlider = () => {
 		slides: { perView: 1, spacing: 10 },
 	})
 
-	// Функции для управления слайдерами
 	const nextSlide = () => {
 		leftInstanceRef.current?.next()
 		rightInstanceRef.current?.next()
@@ -28,7 +26,6 @@ export const DualSlider = () => {
 		rightInstanceRef.current?.prev()
 	}
 
-	// Синхронизация слайдеров
 	useEffect(() => {
 		if (leftInstanceRef.current && rightInstanceRef.current) {
 			leftInstanceRef.current.on('slideChanged', (s) => {
@@ -42,26 +39,22 @@ export const DualSlider = () => {
 
 	return (
 		<div className={styles.container}>
-			{/* Кнопка "Назад" */}
 			<button className={styles.prevButton} onClick={prevSlide}>
 				←
 			</button>
 
-			{/* Левый (вертикальный) слайдер */}
 			<div ref={leftSliderRef} className='keen-slider'>
 				<div className='keen-slider__slide'>Slide 1</div>
 				<div className='keen-slider__slide'>Slide 2</div>
 				<div className='keen-slider__slide'>Slide 3</div>
 			</div>
 
-			{/* Правый (горизонтальный) слайдер */}
 			<div ref={rightSliderRef} className='keen-slider'>
 				<div className='keen-slider__slide'>Slide A</div>
 				<div className='keen-slider__slide'>Slide B</div>
 				<div className='keen-slider__slide'>Slide C</div>
 			</div>
 
-			{/* Кнопка "Вперед" */}
 			<button className={styles.nextButton} onClick={nextSlide}>
 				→
 			</button>

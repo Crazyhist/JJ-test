@@ -1,6 +1,6 @@
 .container {
 	display: grid;
-	grid-template-columns: auto 30% 70% auto; // Добавили колонки под кнопки
+	grid-template-columns: auto 30% 70% auto;
 	gap: 10px;
 	height: 400px;
 	align-items: center;
@@ -23,7 +23,6 @@
 	height: 100px;
 }
 
-/* Стили кнопок */
 .nextButton,
 .prevButton {
 	background: rgba(0, 0, 0, 0.7);

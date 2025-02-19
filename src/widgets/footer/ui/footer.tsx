@@ -35,7 +35,7 @@ export const Footer = () => {
 				</div>
 
 				<Button variant='outlined' className={styles.upButton}>
-					Навверх <ArrowUpIcon />
+					<span>НАВЕРХ</span> <ArrowUpIcon />
 				</Button>
 			</div>
 		</div>

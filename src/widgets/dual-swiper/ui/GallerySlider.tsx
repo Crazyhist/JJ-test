@@ -18,7 +18,6 @@ export const GallerySlider = () => {
 
 	return (
 		<div className={styles.container}>
-			{/* Левая панель */}
 			<GalleryNavigation
 				currentSlide={currentSlide}
 				onPrev={() => instanceRef.current?.prev()}
@@ -26,7 +25,6 @@ export const GallerySlider = () => {
 				totalSlides={instanceRef.current?.track.details.slides.length || 1}
 			/>
 
-			{/* Слайдер */}
 			<div ref={sliderRef} className='keen-slider'>
 				<div className='keen-slider__slide'>
 					<img src='/images/slide1.jpg' alt='Slide 1' />

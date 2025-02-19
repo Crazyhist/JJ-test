@@ -1,11 +1,9 @@
 .footerWrapper {
 	position: relative;
 	width: 100%;
-	background-color: #ff66b2; // Розовый фон, растягиваемый на всю ширину
+	background-color: var(--color-primary);
 
 	.footerContent {
-		max-width: 1200px; // Ограничение контента
-		margin: 0 auto;
 		padding: 20px 60px;
 		display: flex;
 		justify-content: space-between;
@@ -24,7 +22,7 @@
 
 			.phone {
 				font-weight: bold;
-				color: #abec20;
+				color: var(--color-secondary);
 			}
 
 			.city {
@@ -52,12 +50,16 @@
 	}
 
 	.upButton {
-		background: transparent;
-		border: 2px solid white;
-		padding: 8px 16px;
+		background: inherit;
+		color: var(--color-white);
+		border: 2px solid var(--color-white);
+		padding: 20px 52px;
 		border-radius: 30px;
 		cursor: pointer;
-		font-size: 16px;
+		span {
+			font-family: 'DrukCyr', sans-serif;
+			font-size: 22px;
+		}
 	}
 }
 
