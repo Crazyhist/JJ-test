@@ -8,7 +8,7 @@
 	width: 100%;
 	z-index: 1000;
 	background-color: rgba(255, 255, 255, 0.8);
-	backdrop-filter: blur(10px); /* Размытие фона */
+	backdrop-filter: blur(10px);
 	display: grid;
 	grid-template-columns: auto 1fr auto;
 	align-items: center;

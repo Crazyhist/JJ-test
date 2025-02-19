@@ -10,7 +10,7 @@
 		width: 40px;
 		height: 40px;
 		height: 4px;
-		background-color: #0267ff;
+		background-color: var(--color-blue);
 		transition: transform 0.3s ease, background-color 0.3s ease;
 	}
 
@@ -19,7 +19,7 @@
 			transform: rotate(45deg) translateY(8px);
 		}
 		span:nth-child(2) {
-			opacity: 0; /* Прячем среднюю линию */
+			opacity: 0;
 		}
 		span:nth-child(3) {
 			transform: rotate(-45deg) translateY(-8px);
@@ -28,6 +28,7 @@
 	p {
 		font-family: 'Montserrat', sans-serif;
 		font-weight: bold;
+		color: var(--color-blue);
 		font-size: 11px;
 		letter-spacing: 0.01em;
 	}

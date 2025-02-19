@@ -4,12 +4,11 @@
 	box-sizing: border-box;
 	padding: 0;
 	margin: 0;
-	/* Основные цвета */
-	--color-primary: #f269af; /* Розовый для кнопок */
-	--color-secondary: #abec20; /* Зеленый для кнопок */
-	--color-blue: #0267ff; /* Синий текст и элементы */
-	--color-black: #000000; /* Основной текст */
-	--color-white: #ffffff; /* Вторичный текст */
+	--color-primary: #f269af;
+	--color-secondary: #abec20;
+	--color-blue: #0267ff;
+	--color-black: #000000;
+	--color-white: #ffffff;
 	--color-pink: #a66eff;
 
 	--gradient-header: linear-gradient(
@@ -21,9 +20,8 @@
 		#9310d8 100%
 	);
 
-	/* Фоны */
-	--background-main: #ffffff; /* Основной белый фон */
-	--background-highlight: #fafafa; /* Светлый серый фон */
+	--background-main: #ffffff;
+	--background-highlight: #fafafa;
 }
 
 body {

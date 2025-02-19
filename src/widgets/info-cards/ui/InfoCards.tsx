@@ -2,8 +2,6 @@ import { ButtonArrowIcon, CornerDotIcon } from '@/shared/assets/icons'
 import { Button } from '@/shared/ui/button'
 import styles from './InfoCards.module.scss'
 
-// Допустим, у нас есть иконки:
-
 interface CardData {
 	id: number
 	title: string
