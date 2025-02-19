@@ -1,3 +1,3 @@
 export const pathKeys = {
-	root: '/',
+	root: '/JJ-test',
 }

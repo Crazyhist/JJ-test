@@ -1,31 +1,18 @@
-import {
-	ButtonArrowIcon,
-	FlowerIcon,
-	StarIcon123,
-	TearDropIcon,
-} from '@/shared/assets/icons'
+import { ButtonArrowIcon, FlowerIcon, StarIcon123 } from '@/shared/assets/icons'
 import { Button } from '@/shared/ui/button'
+import { InfoCards } from '@/widgets/info-cards'
+
 import styles from './descriptionSection.module.scss'
 
 export const DescriptionSection = () => {
 	return (
 		<section className={styles.container}>
-			<div className={styles.sectionLabel}>
-				<div></div>
-				<TearDropIcon />
-				<span>JJ SHOW</span>
-				<TearDropIcon />
-				<span>CELEBRATE</span>
-				<TearDropIcon />
-				<span>BIRTHDAY</span>
-				<TearDropIcon />
-				<span>QUESTS</span>
-			</div>
+			<div className={styles.sidebar}></div>
 			<div className={styles.about}>
 				<div className={styles.main}>
 					<div className={styles.left}>
 						<h3 className={styles.title}>НАШИ ПАРКИ:</h3>
-						<StarIcon123 />
+						<StarIcon123 className={styles.svgIcon} />
 					</div>
 					<div className={styles.center}>
 						<h2 className={styles.heading}>
@@ -65,7 +52,7 @@ export const DescriptionSection = () => {
 				<div className={styles.main}>
 					<div className={styles.left}>
 						<h3 className={styles.title}>ПРАЗДНИКИ У НАС:</h3>
-						<FlowerIcon />
+						<FlowerIcon className={styles.svgIcon} />
 					</div>
 					<div className={styles.center}>
 						<p>
@@ -95,6 +82,7 @@ export const DescriptionSection = () => {
 						</p>
 					</div>
 				</div>
+				<InfoCards />
 			</div>
 		</section>
 	)

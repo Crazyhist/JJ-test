@@ -1,7 +1,7 @@
 import { MenuToggle } from '@/features/menu-toggle'
+import { DropDownMenu } from '@/widgets/menu'
 
 import { LogoIcon, MapIcon, PhoneIcon } from '@/shared/assets/icons'
-
 import { Button } from '@/shared/ui/button/button'
 
 import styles from './header.module.scss'
@@ -36,6 +36,7 @@ export const Header = () => {
 				</div>
 				<MenuToggle />
 			</header>
+			<DropDownMenu />
 		</div>
 	)
 }

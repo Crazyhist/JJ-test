@@ -1,0 +1,79 @@
+.footerWrapper {
+	position: relative;
+	width: 100%;
+	background-color: #ff66b2; // Розовый фон, растягиваемый на всю ширину
+
+	.footerContent {
+		max-width: 1200px; // Ограничение контента
+		margin: 0 auto;
+		padding: 20px 60px;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		color: white;
+	}
+
+	.left {
+		display: flex;
+		align-items: center;
+		gap: 20px;
+
+		.contacts {
+			display: flex;
+			flex-direction: column;
+
+			.phone {
+				font-weight: bold;
+				color: #abec20;
+			}
+
+			.city {
+				font-size: 14px;
+				font-style: italic;
+				opacity: 0.8;
+			}
+		}
+	}
+
+	.center {
+		display: flex;
+		gap: 20px;
+
+		svg {
+			width: 32px;
+			height: 32px;
+			cursor: pointer;
+		}
+	}
+
+	.right {
+		text-align: right;
+		font-size: 14px;
+	}
+
+	.upButton {
+		background: transparent;
+		border: 2px solid white;
+		padding: 8px 16px;
+		border-radius: 30px;
+		cursor: pointer;
+		font-size: 16px;
+	}
+}
+
+@media (max-width: 800px) {
+	.footerContent {
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+		gap: 20px;
+	}
+
+	.left {
+		flex-direction: column;
+	}
+
+	.right {
+		text-align: center;
+	}
+}

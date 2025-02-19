@@ -1,0 +1,22 @@
+.container {
+	display: grid;
+	grid-template-columns: auto 1fr;
+	align-items: center;
+	height: 100vh;
+}
+
+.keen-slider {
+	width: 100%;
+	height: 100%;
+}
+
+.keen-slider__slide {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	img {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+	}
+}

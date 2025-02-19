@@ -1,24 +1,29 @@
 .container {
 	display: grid;
-	grid-template-columns: 150px 1fr;
+	grid-template-columns: 72px 72px 1fr;
+	grid-template-areas: 'sidebar . about';
 	align-items: start;
+	margin-top: 72px;
 }
 
-.sectionLabel {
-	display: flex;
-	flex-direction: row-reverse;
-	align-items: center;
-	max-width: 72px;
-	gap: 40px;
-	writing-mode: sideways-lr;
-	font-family: 'DrukCyr', sans-serif;
-	font-size: clamp(50px, 7vw, 84px);
-	color: transparent;
-	-webkit-text-stroke: 1px var(--color-black);
-	svg {
-		width: clamp(36px, 7vw, 64px);
-		height: clamp(40px, 7vw, 72px);
-	}
+.sidebar {
+	grid-area: sidebar;
+	min-height: 100%;
+	background-image: url('../../../../../shared/assets/images/side-bar.png');
+	background-size: 100% auto;
+	background-repeat: repeat-y;
+}
+
+.sidebar::before,
+.sidebar::after {
+	content: '';
+	position: relative;
+	display: block;
+	width: 100%;
+	height: 200px;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
 }
 
 .main {
@@ -27,11 +32,11 @@
 	gap: clamp(58px, 5.5vw, 103px);
 }
 .about {
+	grid-area: about;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	align-items: center;
-	row-gap: 8vw;
+	row-gap: 9vw;
 }
 
 .left {
@@ -70,29 +75,46 @@
 	.main {
 		flex-direction: column;
 		align-items: flex-start;
-	}
-}
-
-@media (max-width: 1200px) {
-	.container {
-		grid-template-columns: 120px 1fr;
-	}
-	.sectionLabel {
-		max-width: 60px;
+		gap: clamp(37px, 5.5vw, 103px);
 	}
 }
 
 @media (max-width: 900px) {
 	.container {
-		grid-template-columns: 80px 1fr;
-	}
-	.sectionLabel {
-		max-width: 50px;
+		grid-template-columns: 37px 37px 1fr;
 	}
 }
 
+// @media (max-width: 600px) {
+// 	.container {
+// 		grid-template-columns: 1fr;
+// 	}
+// }
+
 @media (max-width: 600px) {
-	.sectionLabel {
-		max-width: 40px;
+	.container {
+		grid-template-columns: 0px 1fr;
+	}
+	.sidebar {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		gap: 20px;
+	}
+
+	.center,
+	.right {
+		padding-left: 89px;
+	}
+
+	.left {
+		align-items: flex-start;
+		flex-direction: row-reverse;
+		gap: 32px;
+		.svgIcon {
+			width: 56px;
+			height: 56px;
+		}
 	}
 }

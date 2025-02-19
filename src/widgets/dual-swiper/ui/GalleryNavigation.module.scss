@@ -1,0 +1,51 @@
+.navContainer {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 20px;
+	padding: 20px;
+	background: white;
+}
+
+.title {
+	font-size: 40px;
+	font-weight: bold;
+	text-transform: uppercase;
+	writing-mode: vertical-lr;
+}
+
+.pagination {
+	font-size: 18px;
+	font-weight: bold;
+}
+
+.controls {
+	display: flex;
+	gap: 10px;
+
+	button {
+		font-size: 24px;
+		padding: 10px;
+		cursor: pointer;
+		border: none;
+		background: #007bff;
+		color: white;
+	}
+}
+
+.dots {
+	display: flex;
+	gap: 8px;
+
+	.dot {
+		width: 10px;
+		height: 10px;
+		background: gray;
+		border-radius: 50%;
+		transition: background 0.2s;
+	}
+
+	.active {
+		background: limegreen;
+	}
+}

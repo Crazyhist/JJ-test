@@ -22,7 +22,7 @@
 .nav {
 	display: flex;
 	flex-direction: column;
-	gap: 113px;
+	gap: 11vh;
 }
 
 .menuItem {
@@ -42,11 +42,6 @@
 .label {
 	writing-mode: vertical-rl;
 	transform: rotate(180deg);
-}
-
-.arrow {
-	max-width: 16px;
-	max-height: 16px;
 }
 
 @media (max-width: 1030px) {

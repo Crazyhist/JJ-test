@@ -1,12 +1,8 @@
-import { useState } from 'react'
 import { MenuButton } from '@/entities/menu'
+import { useMenuStore } from '../model/menuSlice'
 
 export const MenuToggle = () => {
-	const [isOpen, setIsOpen] = useState(false)
-
-	const toggleMenu = () => {
-		setIsOpen(!isOpen)
-	}
+	const { toggleMenu } = useMenuStore()
 
 	return <MenuButton onClick={toggleMenu} />
 }
