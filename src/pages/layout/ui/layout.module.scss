@@ -1,9 +1,12 @@
 .container {
+	display: flex;
+	flex-direction: column;
+}
+.contentContainer {
 	display: grid;
 	grid-template-columns: auto minmax(0, 84.44vw) auto;
 	min-height: 100vh;
 }
-
 @media (max-width: 1000px) {
 	.container {
 		grid-template-columns: 4.2vw minmax(auto, 91.6vw) 4.2vw;

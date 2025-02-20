@@ -19,8 +19,8 @@ export const Layout = () => {
 				<main>
 					<Outlet />
 				</main>
-				<Footer />
 			</div>
+			<Footer />
 		</div>
 	)
 }
